@@ -1,0 +1,63 @@
+keyword_weights:
+  Typescript: 0.9
+  ownership: 0.9
+  React: 0.7
+  Next.js: 0.6
+  Python: 0.4
+  AWS: 0.3
+  front-end: 0.3
+  react native: 0.2
+  Java: -0.2
+  C#: -0.4
+  PHP: -1
+  Laravel: -1
+  Angular: -1
+  mid-level: -1
+  web3: -10
+  defi: -10
+  remote within: -100
+
+section_titles:
+  Location:
+    keywords: 
+      - location
+  Employment Type:
+    keywords:
+      - employment type
+  Job Description:
+    keywords:
+    - job description
+    - What you'll be building
+    - Basic Function
+    - You will…
+    - About the Position, Duties/Responsibilities
+  About the Role:
+    keywords:
+    - technologies
+    - who you are
+    - requirements
+    - what you bring
+    - What We're Looking For
+    - Knowledge, Skills & Abilities
+  Company:
+    keywords:
+    - company
+    - Who we are
+    - about the company
+  Qualifications:
+    keywords:
+    - qualifications
+    - preferred skills
+    - preferred qualifications
+    - bonus points
+  Benefits:
+    keywords:
+    - What you'll get
+    - working conditions
+    - What's In It For You
+    - Additional Benefits
+
+# keywords that tell something about the application
+markers:
+  - text: No longer accepting applications
+    action: return
