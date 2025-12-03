@@ -174,6 +174,8 @@ def bm25f_score(sections: dict[str, str], query_terms: list[str]) -> float:
         if len(text) == 0:
             continue
         toks = tokenize(text)
+        if len(toks) == 0:
+            continue
         bm25 = BM25Okapi([toks])
         sec_score = bm25.get_scores(query_terms)[0]
         total += SECTION_HEADERS.get(sec, 1.0).weight * float(sec_score)
@@ -200,7 +202,7 @@ def score_job_description(
     # currently it's only to check if the job has python in the description but I may evolve on this if
     # I see good scores on jobs I really don't want
     req_tokens = set(tokenize(sections.get("requirements", "")))
-    if not must_have.issubset(req_tokens):
+    if len(must_have) != 0 and not must_have.issubset(req_tokens):
         return ScoreResult(-1000.0, False, "missing_must_have", {}, 0.0)
 
     matched_by_section: dict[str, dict[str, int]] = {}

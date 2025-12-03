@@ -53,7 +53,7 @@ def run():
     report_name = create_report(jobs=jobs)
 
     # delete_scraping_results_from_backup_folder()
-    notify_and_open_report(report_name)
+    # notify_and_open_report(report_name)
 
 
 if __name__ == "__main__":

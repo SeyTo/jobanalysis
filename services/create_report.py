@@ -10,15 +10,14 @@ from models.job import Job
 
 COLUMNS = {
     "rating": "Rating",
-    "company": "Company",
-    "title": "Job Title",
-    "desc": "Job Description",
+    "company_name": "Company",
+    "job_title": "Job Title",
+    "job_description": "Job Description",
     "location": "Location",
-    "level_desc": "Job 'Level'",
-    "url": "Job Apply Link",
+    "job_description_url": "Job Apply Link",
     "company_desc": "Company Description",
     "company_url": "Company Site",
-    "employees_num": "Number of Employees",
+    "company_num_employees": "Number of Employees",
     "is_remote": "Remote",
 }
 
