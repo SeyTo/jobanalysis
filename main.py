@@ -25,7 +25,8 @@ def load_jobs_to_classes(jobs_data: DataFrame):
     for data in jobs_data.itertuples(index=False):
         job = Job(
             job_title=data.job_title,
-            job_description=data.job_description,
+            job_description_text=data.job_description_text,
+            job_description_html=data.job_description_html,
             job_description_url=data.job_description_url,
             company_name=data.company_name,
             company_desc=data.company_desc,
@@ -33,7 +34,8 @@ def load_jobs_to_classes(jobs_data: DataFrame):
             company_url=data.company_url,
             markers=data.markers,
             is_remote=data.is_remote,
-            location=data.location,
+            company_location=data.company_location,
+            posting_site=data.posting_site,
         )
 
         jobs.append(job)

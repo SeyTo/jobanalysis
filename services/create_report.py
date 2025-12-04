@@ -12,13 +12,14 @@ COLUMNS = {
     "rating": "Rating",
     "company_name": "Company",
     "job_title": "Job Title",
-    "job_description": "Job Description",
-    "location": "Location",
+    "job_description_text": "Job Description",
     "job_description_url": "Job Apply Link",
     "company_desc": "Company Description",
     "company_url": "Company Site",
     "company_num_employees": "Number of Employees",
+    "company_location": "Company Location",
     "is_remote": "Remote",
+    "posting_site": "Posting Site",
 }
 
 

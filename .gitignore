@@ -217,3 +217,8 @@ __marimo__/
 *.xlsx
 
 b.json
+config/__pycache__
+config/__pycache__
+models/__pycache__
+services/__pycache__
+b.json
