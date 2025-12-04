@@ -1,0 +1,5 @@
+- [ ] Section separation based on html.
+- [ ] Generated list of keywords on which the values were scored.
+- [ ] Use spaCY to extract lemma and POS tags to understand the context of the words.
+- [ ] Advanced understanding of sentences using spaCY.
+- [ ] Auto-add new found keywords in the config file.
